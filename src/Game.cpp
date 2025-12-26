@@ -1,7 +1,7 @@
 #include "Game.h"
-#include "Explosion.hpp"
-#include "Guts.hpp"
-#include "ExplosionProvider.hpp"
+#include "Explosion.h"
+#include "Guts.h"
+#include "ExplosionProvider.h"
 #include <iostream>
 #include <algorithm>
 #include <random>
