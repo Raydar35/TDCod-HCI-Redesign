@@ -41,7 +41,7 @@ void Zombie::loadTextures() {
     // Load walk animation textures
     for (int i = 0; i < 9; ++i) { // Assuming 32 frames for run animation
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieWalker/Walk/walk_00";
+        std::string filePath = "assets/ZombieWalker/Walk/walk_00";
         // Removed conditional extra '0' to match 3-digit filenames like walk_000.png
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
@@ -53,7 +53,7 @@ void Zombie::loadTextures() {
     // Load attack animation textures
     for (int i = 0; i < 9; ++i) { // Assuming 32 frames for attack animation
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieWalker/Attack/Attack_00";
+        std::string filePath = "assets/ZombieWalker/Attack/Attack_00";
         // Removed conditional extra '0' to match 3-digit filenames like Attack_000.png
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
@@ -65,7 +65,7 @@ void Zombie::loadTextures() {
     // Load death animation textures
     for (int i = 0; i < 6; ++i) { // Assuming 30 frames for death animation
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieWalker/Death/Death_00";
+        std::string filePath = "assets/ZombieWalker/Death/Death_00";
         // Removed conditional extra '0' to match 3-digit filenames like Death_000.png
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {

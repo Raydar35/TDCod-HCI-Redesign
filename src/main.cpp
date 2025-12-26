@@ -1,5 +1,5 @@
 #include "Game.h"
-#include "Scene/Cutscene.h" // Corrected include path
+#include "Cutscene.h" // Corrected include path
 
 int main() {
     Game game;

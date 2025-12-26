@@ -37,7 +37,7 @@ LevelManager::LevelManager()
         "Complete this tutorial by exploring the area and eliminating all zombies."
     };
     
-    if (!font.loadFromFile("TDCod/Assets/Call of Ops Duty.otf")) {
+    if (!font.loadFromFile("assets/Call of Ops Duty.otf")) {
         std::cerr << "Error loading font for dialog! Trying fallback." << std::endl;
     }
     
@@ -55,7 +55,7 @@ LevelManager::LevelManager()
     mapBounds.setOutlineThickness(2);
     mapBounds.setPosition(0, 0);
     
-    if (!levelStartBuffer.loadFromFile("TDCod/Assets/Audio/wavestart.mp3")) {
+    if (!levelStartBuffer.loadFromFile("assets/Audio/wavestart.mp3")) {
         std::cerr << "Error loading level start sound!" << std::endl;
     }
     levelStartSound.setBuffer(levelStartBuffer);

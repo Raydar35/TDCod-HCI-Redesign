@@ -139,13 +139,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Animator.h" />
+    <ClInclude Include="include\BaseZombie.h" />
+    <ClInclude Include="include\Bullet.h" />
+    <ClInclude Include="include\Cutscene.h" />
+    <ClInclude Include="include\Doctor.h" />
+    <ClInclude Include="include\Entity.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\LevelManager.h" />
+    <ClInclude Include="include\PhysicsBody.h" />
+    <ClInclude Include="include\PhysicsWorld.h" />
+    <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\Vec2.h" />
+    <ClInclude Include="include\Zombie.h" />
+    <ClInclude Include="include\ZombieCrawler.h" />
+    <ClInclude Include="include\ZombieKing.h" />
+    <ClInclude Include="include\ZombieTank.h" />
+    <ClInclude Include="include\ZombieWalker.h" />
+    <ClInclude Include="include\ZombieZoom.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="src\BaseZombie.cpp" />
     <ClCompile Include="src\Bullet.cpp" />
+    <ClCompile Include="src\Doctor.cpp" />
     <ClCompile Include="src\Entity.cpp" />
-    <ClCompile Include="src\Explosion.cpp" />
-    <ClCompile Include="src\ExplosionProvider.cpp" />
     <ClCompile Include="src\Game.cpp" />
-    <ClCompile Include="src\Guts.cpp" />
     <ClCompile Include="src\LevelManager.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\PhysicsBody.cpp" />
@@ -153,27 +174,12 @@
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\scene.cpp" />
     <ClCompile Include="src\Vec2.cpp" />
+    <ClCompile Include="src\Zombie.cpp" />
+    <ClCompile Include="src\ZombieCrawler.cpp" />
+    <ClCompile Include="src\ZombieKing.cpp" />
+    <ClCompile Include="src\ZombieTank.cpp" />
     <ClCompile Include="src\ZombieWalker.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="include\Animator.h" />
-    <ClInclude Include="include\BaseZombie.h" />
-    <ClInclude Include="include\Bullet.h" />
-    <ClInclude Include="include\Cutscene.h" />
-    <ClInclude Include="include\Entity.h" />
-    <ClInclude Include="include\Explosion.hpp" />
-    <ClInclude Include="include\ExplosionProvider.hpp" />
-    <ClInclude Include="include\Game.h" />
-    <ClInclude Include="include\Guts.hpp" />
-    <ClInclude Include="include\LevelManager.h" />
-    <ClInclude Include="include\PhysicsBody.h" />
-    <ClInclude Include="include\PhysicsWorld.h" />
-    <ClInclude Include="include\Player.h" />
-    <ClInclude Include="include\Vec2.h" />
-    <ClInclude Include="include\ZombieWalker.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".gitignore" />
+    <ClCompile Include="src\ZombieZoom.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

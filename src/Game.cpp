@@ -15,23 +15,23 @@ Game::Game()
     background.setFillColor(sf::Color(50, 50, 50));
     background.setSize(sf::Vector2f(1200, 1250)); // Set to max map size
     
-    if (!mapTexture1.loadFromFile("TDCod/Assets/Map.png")) {
+    if (!mapTexture1.loadFromFile("assets/Map.png")) {
         std::cerr << "Error loading map1 texture!" << std::endl;
     }
     mapSprite1.setTexture(mapTexture1);
     
-    if (!mapTexture2.loadFromFile("TDCod/Assets/Map/Map2/Map2.png")) {
+    if (!mapTexture2.loadFromFile("assets/Map/Map2/Map2.png")) {
         std::cerr << "Error loading map2 texture!" << std::endl;
     }
     mapSprite2.setTexture(mapTexture2);
     
-    if (!mapTexture3.loadFromFile("TDCod/Assets/Map/Map3/Map3.png")) {
+    if (!mapTexture3.loadFromFile("assets/Map/Map3/Map3.png")) {
         std::cerr << "Error loading map3 texture!" << std::endl;
     }
     mapSprite3.setTexture(mapTexture3);
     
-    if (!font.loadFromFile("TDCod/Assets/Call of Ops Duty.otf")) {
-        std::cerr << "Error loading font 'TDCod/Assets/Call of Ops Duty.otf'! Trying fallback." << std::endl;
+    if (!font.loadFromFile("assets/Call of Ops Duty.otf")) {
+        std::cerr << "Error loading font 'assets/Call of Ops Duty.otf'! Trying fallback." << std::endl;
     }
     
     pointsText.setFont(font);
@@ -47,19 +47,19 @@ Game::Game()
     levelManager.setPhysicsWorld(&physics);
     levelManager.initialize();
     
-    if (!backgroundMusic.openFromFile("TDCod/Assets/Audio/atmosphere.mp3")) {
-        std::cerr << "Error loading background music! Path: TDCod/Assets/Audio/atmosphere.mp3" << std::endl;
+    if (!backgroundMusic.openFromFile("assets/Audio/atmosphere.mp3")) {
+        std::cerr << "Error loading background music! Path: assets/Audio/atmosphere.mp3" << std::endl;
     } else {
         backgroundMusic.setVolume(15);
     }
 
-    if (!zombieBiteBuffer.loadFromFile("TDCod/Assets/Audio/zombiebite.mp3")) {
+    if (!zombieBiteBuffer.loadFromFile("assets/Audio/zombiebite.mp3")) {
         std::cerr << "Error loading zombie bite sound!" << std::endl;
     } else {
         zombieBiteSound.setBuffer(zombieBiteBuffer);
     }
 
-    if (!Bullet::bulletTexture.loadFromFile("TDCod/Assets/WeaponsItems/Bullet/Fire_small_asset.png")) {
+    if (!Bullet::bulletTexture.loadFromFile("assets/WeaponsItems/Bullet/Fire_small_asset.png")) {
         std::cerr << "Failed to load bullet texture!" << std::endl;
     }
 }

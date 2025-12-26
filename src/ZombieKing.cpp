@@ -93,7 +93,7 @@ void ZombieKing::attack() {
 void ZombieKing::loadTextures() {
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieKing/Walk/Walk_00";
+        std::string filePath = "assets/ZombieKing/Walk/Walk_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie king walk texture: " << filePath << std::endl;
@@ -103,7 +103,7 @@ void ZombieKing::loadTextures() {
 
     for (int i = 0; i < 10; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieKing/Attack1/attack1_";
+        std::string filePath = "assets/ZombieKing/Attack1/attack1_";
         if (i < 10) filePath += "00";
         else filePath += "0";
         filePath += std::to_string(i) + ".png";
@@ -115,7 +115,7 @@ void ZombieKing::loadTextures() {
 
     for (int i = 0; i < 9; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieKing/Attack2/Attack4_00";
+        std::string filePath = "assets/ZombieKing/Attack2/Attack4_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie king special attack texture: " << filePath << std::endl;
@@ -126,7 +126,7 @@ void ZombieKing::loadTextures() {
     for (int i = 0; i < 15; ++i) {
         if (i == 1 || i == 5) continue;
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieKing/Death/Death_";
+        std::string filePath = "assets/ZombieKing/Death/Death_";
         if (i < 10) filePath += "00";
         else filePath += "0";
         filePath += std::to_string(i) + ".png";

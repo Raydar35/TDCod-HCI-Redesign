@@ -17,7 +17,7 @@ ZombieZoom::ZombieZoom(float x, float y)
 void ZombieZoom::loadTextures() {
     for (int i = 0; i < 9; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieZoom/Walk/Walk_00";
+        std::string filePath = "assets/ZombieZoom/Walk/Walk_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie zoom walk texture: " << filePath << std::endl;
@@ -27,7 +27,7 @@ void ZombieZoom::loadTextures() {
 
     for (int i = 0; i < 9; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieZoom/Attack/Attack_00";
+        std::string filePath = "assets/ZombieZoom/Attack/Attack_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie zoom attack texture: " << filePath << std::endl;
@@ -37,7 +37,7 @@ void ZombieZoom::loadTextures() {
 
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieZoom/Death/Death_00";
+        std::string filePath = "assets/ZombieZoom/Death/Death_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie zoom death texture: " << filePath << std::endl;

@@ -30,7 +30,7 @@ void Doctor::loadTextures() {
     // Load idle textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Doctor/DoctorIdle/Idle_knife_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Doctor/DoctorIdle/Idle_knife_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading doctor idle texture: " << filePath << std::endl;
             // Use placeholder texture if loading fails
@@ -42,7 +42,7 @@ void Doctor::loadTextures() {
     // Load walk textures
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Doctor/DoctorWalk/Walk_knife_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Doctor/DoctorWalk/Walk_knife_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading doctor walk texture: " << filePath << std::endl;
             // Use placeholder texture if loading fails

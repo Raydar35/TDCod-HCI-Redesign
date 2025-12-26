@@ -17,7 +17,7 @@ ZombieCrawler::ZombieCrawler(float x, float y)
 void ZombieCrawler::loadTextures() {
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieCrawler/Walk/Walk_00";
+        std::string filePath = "assets/ZombieCrawler/Walk/Walk_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie crawler walk texture: " << filePath << std::endl;
@@ -27,7 +27,7 @@ void ZombieCrawler::loadTextures() {
     
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieCrawler/Attack/Attack1_00";
+        std::string filePath = "assets/ZombieCrawler/Attack/Attack1_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie crawler attack texture: " << filePath << std::endl;
@@ -37,7 +37,7 @@ void ZombieCrawler::loadTextures() {
 
     for (int i = 0; i < 10; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieCrawler/Death/Death_00";
+        std::string filePath = "assets/ZombieCrawler/Death/Death_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie crawler death texture: " << filePath << std::endl;

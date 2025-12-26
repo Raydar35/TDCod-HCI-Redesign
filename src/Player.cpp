@@ -44,7 +44,7 @@ Player::Player(Vec2 position)
     }
 
     // Load knife attack sound
-    if (!knifeAttackBuffer.loadFromFile("TDCod/Assets/Audio/knife.mp3")) {
+    if (!knifeAttackBuffer.loadFromFile("assets/Audio/knife.mp3")) {
         std::cerr << "Error loading knife attack sound!" << std::endl;
     } else {
         knifeAttackSound.setBuffer(knifeAttackBuffer);
@@ -52,7 +52,7 @@ Player::Player(Vec2 position)
     }
 
     // Load bat attack sound
-    if (!batAttackBuffer.loadFromFile("TDCod/Assets/Audio/bat.mp3")) {
+    if (!batAttackBuffer.loadFromFile("assets/Audio/bat.mp3")) {
         std::cerr << "Error loading bat attack sound!" << std::endl;
     } else {
         batAttackSound.setBuffer(batAttackBuffer);
@@ -60,7 +60,7 @@ Player::Player(Vec2 position)
     }
 
     // Load pistol attack sound
-    if (!pistolAttackBuffer.loadFromFile("TDCod/Assets/Audio/pistolshot.mp3")) {
+    if (!pistolAttackBuffer.loadFromFile("assets/Audio/pistolshot.mp3")) {
         std::cerr << "Error loading pistol attack sound!" << std::endl;
     } else {
         pistolAttackSound.setBuffer(pistolAttackBuffer);
@@ -68,7 +68,7 @@ Player::Player(Vec2 position)
     }
 
     // Load rifle attack sound
-    if (!rifleAttackBuffer.loadFromFile("TDCod/Assets/Audio/rifleshot.mp3")) {
+    if (!rifleAttackBuffer.loadFromFile("assets/Audio/rifleshot.mp3")) {
         std::cerr << "Error loading rifle attack sound!" << std::endl;
     } else {
         rifleAttackSound.setBuffer(rifleAttackBuffer);
@@ -76,7 +76,7 @@ Player::Player(Vec2 position)
     }
 
     // Load flamethrower attack sound
-    if (!flamethrowerAttackBuffer.loadFromFile("TDCod/Assets/Audio/flamethrower.mp3")) {
+    if (!flamethrowerAttackBuffer.loadFromFile("assets/Audio/flamethrower.mp3")) {
         std::cerr << "Error loading flamethrower attack sound!" << std::endl;
     } else {
         flamethrowerAttackSound.setBuffer(flamethrowerAttackBuffer);
@@ -84,7 +84,7 @@ Player::Player(Vec2 position)
     }
 
     // Load walking sound
-    if (!walkingBuffer.loadFromFile("TDCod/Assets/Audio/walking.mp3")) {
+    if (!walkingBuffer.loadFromFile("assets/Audio/walking.mp3")) {
         std::cerr << "Error loading walking sound!" << std::endl;
     } else {
         walkingSound.setBuffer(walkingBuffer);
@@ -97,7 +97,7 @@ void Player::loadTextures() {
     // Knife textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroKnife/HeroIdle/Idle_Knife_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroKnife/HeroIdle/Idle_Knife_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading knife idle texture: " << filePath << std::endl;
         }
@@ -105,7 +105,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroKnife/HeroWalk/Walk_knife_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroKnife/HeroWalk/Walk_knife_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading knife walk texture: " << filePath << std::endl;
         }
@@ -113,7 +113,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroKnife/HeroAttack/Knife_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroKnife/HeroAttack/Knife_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading knife attack texture: " << filePath << std::endl;
         }
@@ -123,7 +123,7 @@ void Player::loadTextures() {
     // Bat textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroBat/HeroIdle/Idle_Bat_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroBat/HeroIdle/Idle_Bat_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading bat idle texture: " << filePath << std::endl;
         }
@@ -131,7 +131,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroBat/HeroWalk/Walk_bat_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroBat/HeroWalk/Walk_bat_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading bat walk texture: " << filePath << std::endl;
         }
@@ -139,7 +139,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroBat/HeroAttack/Bat_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroBat/HeroAttack/Bat_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading bat attack texture: " << filePath << std::endl;
         }
@@ -149,7 +149,7 @@ void Player::loadTextures() {
     // Pistol textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroPistol/HeroIdle/Idle_gun_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroPistol/HeroIdle/Idle_gun_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading pistol idle texture: " << filePath << std::endl;
         }
@@ -157,7 +157,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroPistol/HeroWalk/Walk_gun_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroPistol/HeroWalk/Walk_gun_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading pistol walk texture: " << filePath << std::endl;
         }
@@ -165,7 +165,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 5; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroPistol/HeroAttack/Gun_Shot_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroPistol/HeroAttack/Gun_Shot_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading pistol attack texture: " << filePath << std::endl;
         }
@@ -175,7 +175,7 @@ void Player::loadTextures() {
     // Rifle textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroRifle/HeroIdle/Idle_riffle_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroRifle/HeroIdle/Idle_riffle_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading rifle idle texture: " << filePath << std::endl;
         }
@@ -183,7 +183,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroRifle/HeroWalk/Walk_riffle_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroRifle/HeroWalk/Walk_riffle_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading rifle walk texture: " << filePath << std::endl;
         }
@@ -191,7 +191,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroRifle/HeroAttack/Riffle_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroRifle/HeroAttack/Riffle_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading rifle attack texture: " << filePath << std::endl;
         }
@@ -201,7 +201,7 @@ void Player::loadTextures() {
     // Flamethrower textures
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroFlame/HeroIdle/Idle_firethrower_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroFlame/HeroIdle/Idle_firethrower_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading flamethrower idle texture: " << filePath << std::endl;
         }
@@ -209,7 +209,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroFlame/HeroWalk/Walk_firethrower_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroFlame/HeroWalk/Walk_firethrower_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading flamethrower walk texture: " << filePath << std::endl;
         }
@@ -217,7 +217,7 @@ void Player::loadTextures() {
     }
     for (int i = 0; i < 8; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroFlame/HeroAttack/FlameThrower_00" + std::to_string(i) + ".png";
+        std::string filePath = "assets/Hero/HeroFlame/HeroAttack/FlameThrower_00" + std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading flamethrower attack texture: " << filePath << std::endl;
         }
@@ -227,7 +227,7 @@ void Player::loadTextures() {
     // Death textures
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/Hero/HeroDeath/death_000" + std::to_string(i) + "_Man.png";
+        std::string filePath = "assets/Hero/HeroDeath/death_000" + std::to_string(i) + "_Man.png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading player death texture: " << filePath << std::endl;
         }

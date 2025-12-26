@@ -17,7 +17,7 @@ ZombieTank::ZombieTank(float x, float y)
 void ZombieTank::loadTextures() {
     for (int i = 0; i < 9; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieTank/Walk/walk_00";
+        std::string filePath = "assets/ZombieTank/Walk/walk_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie tank walk texture: " << filePath << std::endl;
@@ -27,7 +27,7 @@ void ZombieTank::loadTextures() {
 
     for (int i = 0; i < 9; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieTank/Attack/attack_00";
+        std::string filePath = "assets/ZombieTank/Attack/attack_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie tank attack texture: " << filePath << std::endl;
@@ -37,7 +37,7 @@ void ZombieTank::loadTextures() {
 
     for (int i = 0; i < 6; ++i) {
         sf::Texture texture;
-        std::string filePath = "TDCod/Assets/ZombieTank/Death/death_00";
+        std::string filePath = "assets/ZombieTank/Death/death_00";
         filePath += std::to_string(i) + ".png";
         if (!texture.loadFromFile(filePath)) {
             std::cerr << "Error loading zombie tank death texture: " << filePath << std::endl;
