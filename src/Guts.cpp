@@ -1,4 +1,4 @@
-#include "Guts.hpp" // adjust path if you placed header elsewhere
+#include "Guts.h" // adjust path if you placed header elsewhere
 #include <random>
 #include <cmath>
 

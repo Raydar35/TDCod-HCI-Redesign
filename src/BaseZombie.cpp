@@ -2,8 +2,8 @@
 #include <iostream>
 #include <cmath>
 #include <algorithm>
-#include "ExplosionProvider.hpp"
-#include "Guts.hpp"
+#include "ExplosionProvider.h"
+#include "Guts.h"
 
 BaseZombie::BaseZombie(float x, float y, float health, float attackDamage, float speed, float attackRange, float attackCooldown)
     : Entity(EntityType::Enemy, Vec2(x, y), Vec2(50.f, 50.f), false, 1.0f, true),

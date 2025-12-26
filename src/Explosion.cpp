@@ -1,5 +1,5 @@
 #define SFML_NO_DEPRECATED_WARNINGS
-#include "Explosion.hpp"
+#include "Explosion.h"
 #include <algorithm>
 #include <cstdlib>
 #include <cmath>

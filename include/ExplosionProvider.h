@@ -1,5 +1,5 @@
 #pragma once
-#include "Explosion.hpp"
+#include "Explosion.h"
 
 struct Vec2;
 

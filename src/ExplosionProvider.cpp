@@ -1,7 +1,7 @@
 #include "ExplosionProvider.hpp"
-#include "Explosion.hpp"
+#include "Explosion.h"
 #include "Vec2.h"
-#include "Guts.hpp"
+#include "Guts.h"
 #include <cmath>
 
 void ExplosionProvider::initProvider()

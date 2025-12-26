@@ -1,6 +1,6 @@
 #include "Bullet.h"
 #include "BaseZombie.h"
-#include "ExplosionProvider.hpp"
+#include "ExplosionProvider.h"
 #include <iostream>
 #include <SFML/Audio.hpp>
 
