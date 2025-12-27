@@ -19,7 +19,7 @@ Original repo: [GitHub link](https://github.com/Huginho8/TDCod)
 
 ## Features
 
-- **Gameplay Mechanics**
+**Gameplay Mechanics**
     - Player movement, sprinting, aiming, shooting, reloading, weapon swapping.
     - Enemy behavior with player tracking and lunge attacks.
     - Wave-based round system that structures progression, pacing, and difficulty.
