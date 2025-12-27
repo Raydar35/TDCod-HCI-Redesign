@@ -20,21 +20,21 @@ Original repo: [GitHub link](https://github.com/Huginho8/TDCod)
 ## Features
 
 **Gameplay Mechanics**
-    - Player movement, sprinting, aiming, shooting, reloading, weapon swapping.
-    - Enemy behavior with player tracking and lunge attacks.
-    - Wave-based round system that structures progression, pacing, and difficulty.
+- Player movement, sprinting, aiming, shooting, reloading, weapon swapping.
+- Enemy behavior with player tracking and lunge attacks.
+- Wave-based round system that structures progression, pacing, and difficulty.
 **Physics and Collisions**
-    - Custom 2D physics interactions between player, zombies, and bullets. 
+- Custom 2D physics interactions between player, zombies, and bullets. 
 **Visual Effects**
-    - Explosions and blood effects are implemented using a lightweight kinematic particle system.
-    - Supports persistent trace effects (e.g. blood stains and explosion residue).
+- Explosions and blood effects are implemented using a lightweight kinematic particle system.
+- Supports persistent trace effects (e.g. blood stains and explosion residue).
 **Animation System**
-    - Frame based animations with state transistions and sprite rotation.
+- Frame based animations with state transistions and sprite rotation.
 **Menus**
-    - Main menu with transition into gameplay.
-    - In-game pause menu providing access to audio settings and an in-game control reference panel.
+- Main menu with transition into gameplay.
+- In-game pause menu providing access to audio settings and an in-game control reference panel.
 **UI & HUD Redesign**
-    - Redesigned UI and HUD to improve readability, information hierarchy, and player feedback.
+- Redesigned UI and HUD to improve readability, information hierarchy, and player feedback.
 
 ---
 
